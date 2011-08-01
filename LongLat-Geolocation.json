@@ -1,0 +1,100 @@
+[{
+
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            1.2956997,
+                            52.6333618
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            1.1207841,
+                            52.0446001
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.1016066,
+                            51.5388444
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.1025795,
+                            51.5132706
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.1343033,
+                            51.4983844
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.5879458,
+                            51.2425718
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -2.5948069,
+                            51.4519698
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -5.2758098,
+                            50.2262046
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.7431981,
+                            51.9973125
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -1.8985158,
+                            52.4762241
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -1.6211927,
+                            54.9675589
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -2.2363113,
+                            53.4841175
+                        ]
+                    }
+                ]
+            },
+            "type": "Feature",
+            "properties": {}
+        }
+    ]
+}
+]
