@@ -11,23 +11,62 @@
 <script type='text/javascript' src='./OpenLayers-2.10/OpenLayers.js'>
 </script>
 
+<script type='text/javascript' src='./jquery-1.6.2.min.js'>
+</script>
+
 <script type='text/javascript'>
-var speedmap = function(){
+var speedmap = function(FeatureCollection){
   var map, layer = null;
   map = new OpenLayers.Map('map');
-  layer = new OpenLayers.Layer.OSM("Simple OSM Map");
+  layer = new OpenLayers.Layer.WMS("Bobina",
+  "http://vmap0.tiles.osgeo.org/wms/vmap0",
+                    {layers: 'basic'} );
   map.addLayer(layer);
   map.setCenter(
     new OpenLayers.LonLat(-3.677, 53.904).transform(
       new OpenLayers.Projection("EPSG:4326"),
       map.getProjectionObject()
-    ),
+      ),
     7
   );
+
+  /*var featurecollection = {
+     "type": "FeatureCollection",
+     "features": [
+      {"geometry": {
+	  "type": "GeometryCollection",
+	  "geometries": [
+	      {
+		  "type":"Point",
+		  "coordinates":[1.295, 52.633]
+	      }
+	]
+      },
+      "type": "Feature",
+      "properties": {}}
+     ]
+    };*/
+    var geojson_format = new OpenLayers.Format.GeoJSON();
+    var vector_layer = new OpenLayers.Layer.Vector();
+    map.addLayer(vector_layer);
+    vector_layer.addFeatures(geojson_format.read(featurecollection));
 };
 
 
-speedmap();
+
+$(document).ready(function(){
+$.ajax({
+  url: "test.json",
+  context: document.body,
+//  data: "{}",
+type: "GET",
+dataType: "json",
+  success: function(){
+ // speedmap();
+  }
+});
+});
+
 </script>
 
 </body>
