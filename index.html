@@ -18,7 +18,7 @@
 var speedmap = function(FeatureCollection){
   var map, layer = null;
   map = new OpenLayers.Map('map');
-  layer = new OpenLayers.Layer.OSM("Bobina");
+  layer = new OpenLayers.Layer.OSM("Test Map");
   map.addLayer(layer);
   map.setCenter(
     new OpenLayers.LonLat(-3.677, 53.904).transform(
@@ -29,7 +29,10 @@ var speedmap = function(FeatureCollection){
   );
 
 
-    var geojson_format = new OpenLayers.Format.GeoJSON();
+    var geojson_format = new OpenLayers.Format.GeoJSON({
+                    'internalProjection': new OpenLayers.Projection("EPSG:900913"),
+                    'externalProjection': new OpenLayers.Projection("EPSG:4326")
+                });
     var vector_layer = new OpenLayers.Layer.Vector();
     map.addLayer(vector_layer);
     vector_layer.addFeatures(geojson_format.read(FeatureCollection));
