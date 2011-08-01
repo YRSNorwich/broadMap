@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+<div id='map' style='width:500px;height:500px;'>
+</div>
+<script type='text/javascript' src='./OpenLayers-2.10/OpenLayers.js'>
+</script>
+
+<script type='text/javascript'>
+var speedmap = function(){
+  var map, layer = null;
+  map = new OpenLayers.Map('map');
+  layer = new OpenLayers.Layer.OSM("Simple OSM Map");
+  map.addLayer(layer);
+  map.setCenter(
+    new OpenLayers.LonLat(-3.677, 53.904).transform(
+      new OpenLayers.Projection("EPSG:4326"),
+      map.getProjectionObject()
+    ),
+    7
+  );
+};
+
+
+speedmap();
+</script>
+
+</body>
+
+</html>
