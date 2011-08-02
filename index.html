@@ -1,18 +1,12 @@
 <html>
 
 <head>
-
-
 </head>
-
 <body>
-<div id='map' style='width:500px;height:500px;'>
-</div>
-<script type='text/javascript' src='./OpenLayers-2.10/OpenLayers.js'>
-</script>
+    <div id='map' style='width:600px;height:700px;'></div>
+    <script type='text/javascript' src='./OpenLayers-2.10/OpenLayers.js'></script>
 
-<script type='text/javascript' src='./jquery-1.6.2.min.js'>
-</script>
+    <script type='text/javascript' src='./jquery-1.6.2.min.js'></script>
 
 <script type='text/javascript'>
 /**
@@ -27,12 +21,15 @@ var speedmap = function(FeatureCollection){
     map.addLayer(layer); // add the tile layer to the map
     // We need to set the centre of the map:
     map.setCenter(
-        new OpenLayers.LonLat(-3.677, 53.904).transform( // Take our notional centre and transform it
+        new OpenLayers.LonLat(-3.9, 54.2).transform( // Take our notional centre and transform it
             new OpenLayers.Projection("EPSG:4326"), // from the coordinate format used by google (and most of the rest of us)
             map.getProjectionObject() // to whichever our map is using (osm uses EPSG:900913)
         ),
-        7 // Set an intial zoom level
+        6 // Set an intial zoom level
     );
+    
+    var layer_switch = new OpenLayers.Control.LayerSwitcher();
+    map.addControl(layer_switch);
     
     /**
      * OpenLayers uses symbolizers to draw features on the map
@@ -68,11 +65,22 @@ var speedmap = function(FeatureCollection){
                     'externalProjection': new OpenLayers.Projection("EPSG:4326")
                 });
     // Add a vector layer which uses our styles
-    var vector_layer = new OpenLayers.Layer.Vector('centres', {styleMap:styleMap});
+    var vector_layer = new OpenLayers.Layer.Vector('Young Rewired State Centres', {styleMap:styleMap});
     // Add the new layer to the map
     map.addLayer(vector_layer);
     // Add features to the layer by reading in the data passed to the main speedmap function
     vector_layer.addFeatures(geojson_format.read(FeatureCollection));
+    
+    $.ajax({
+        url: "./city_speeds.json",
+        type: 'GET',
+        dataType: 'json',
+        success: function(data){
+            var speed_layer = new OpenLayers.Layer.Vector('Real Broadband Speeds');
+            map.addLayer(speed_layer);
+            speed_layer.addFeatures(geojson_format.read(data));
+        }
+    });
 };
 
 
