@@ -11,7 +11,8 @@
                             52.6333618
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":1,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":2,
@@ -22,7 +23,8 @@
                             52.0446001
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":3,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":3,
@@ -33,7 +35,8 @@
                             51.5388444
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":5,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":4,
@@ -44,7 +47,8 @@
                             51.5132706
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":5,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":5,
@@ -55,7 +59,8 @@
                             51.4983844
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":2,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":6,
@@ -66,7 +71,8 @@
                             51.2425718
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":2,
+                            "label":"Centre Name"}
         },{   "type":"Feature",
             "id":7,
             "geometry":{
@@ -76,7 +82,8 @@
                             51.4519698
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":4,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":8,
@@ -87,7 +94,8 @@
                             50.2262046
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":2,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":9,
@@ -98,7 +106,8 @@
                             51.9973125
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":3,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":10,
@@ -109,7 +118,8 @@
                             52.4762241
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":4,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":11,
@@ -120,7 +130,8 @@
                             54.9675589
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":1,
+                            "label":"Centre Name"}
         },
         {   "type":"Feature",
             "id":12,
@@ -131,7 +142,8 @@
                             53.4841175
                         ]
                     },
-            "properties": {}
+            "properties": { "bbspeed":2,
+                            "label":"Centre Name"}
         }
     ]
 }

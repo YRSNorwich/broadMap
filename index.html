@@ -15,38 +15,76 @@
 </script>
 
 <script type='text/javascript'>
+/**
+ * Speedmap - map broadband speeds of YRS centres
+ *
+ * We'll limit our global footprint to a single function
+ */
 var speedmap = function(FeatureCollection){
-  var map, layer = null;
-  map = new OpenLayers.Map('map');
-  layer = new OpenLayers.Layer.OSM("Test Map");
-  map.addLayer(layer);
-  map.setCenter(
-    new OpenLayers.LonLat(-3.677, 53.904).transform(
-      new OpenLayers.Projection("EPSG:4326"),
-      map.getProjectionObject()
-      ),
-    7
-  );
+    var map, layer = null; //initialize variables for our map and the map tile layer
+    map = new OpenLayers.Map('map'); // Build a map using OpenLayers
+    layer = new OpenLayers.Layer.OSM("Open Street Map"); // add a layer showing OpenStreetMap tiles
+    map.addLayer(layer); // add the tile layer to the map
+    // We need to set the centre of the map:
+    map.setCenter(
+        new OpenLayers.LonLat(-3.677, 53.904).transform( // Take our notional centre and transform it
+            new OpenLayers.Projection("EPSG:4326"), // from the coordinate format used by google (and most of the rest of us)
+            map.getProjectionObject() // to whichever our map is using (osm uses EPSG:900913)
+        ),
+        7 // Set an intial zoom level
+    );
+    
+    /**
+     * OpenLayers uses symbolizers to draw features on the map
+     */
+    var symbolizer = OpenLayers.Util.applyDefaults( // apply all of the normal defaults
+            {}, // Put base styles in here to override the defaults
+            OpenLayers.Feature.Vector.style["default"]
+        );
+    var styleMap = new OpenLayers.StyleMap({"default": symbolizer}); // make a new stylemap using our symbolizer
+    
+    /**
+     * This lookup table keys our broadband speed ratings to specific styles
+     */
+    var speed_lookup = {
+        0:{fillColor:'black'},
+        1:{fillColor:'red'},
+        2:{fillColor:'orange'},
+        3:{fillColor:'yellow'},
+        4:{fillColor:'green'},
+        5:{fillColor:'blue'}
+    };
+    /**
+     * Now we can tell the stylemap to apply our style rules based on the 
+     * bbspeed attribute of each feature
+     */
+    styleMap.addUniqueValueRules("default", "bbspeed", speed_lookup);
 
-
+    /**
+     * Create a reader for geoJSON files which applies an appropriate point transformation
+     */ 
     var geojson_format = new OpenLayers.Format.GeoJSON({
                     'internalProjection': new OpenLayers.Projection("EPSG:900913"),
                     'externalProjection': new OpenLayers.Projection("EPSG:4326")
                 });
-    var vector_layer = new OpenLayers.Layer.Vector();
+    // Add a vector layer which uses our styles
+    var vector_layer = new OpenLayers.Layer.Vector('centres', {styleMap:styleMap});
+    // Add the new layer to the map
     map.addLayer(vector_layer);
+    // Add features to the layer by reading in the data passed to the main speedmap function
     vector_layer.addFeatures(geojson_format.read(FeatureCollection));
 };
 
 
-
+// Wait untill the document's all set up
 $(document).ready(function(){
+  // And then: send a request for our feature file
   $.ajax({
-    url: "./LongLat-Geolocation.json",
+    url: "./LongLat-Geolocation.json", 
     type: "GET",
     dataType: "json",
-    success: function(data) {
-      speedmap(data);
+    success: function(data) { // once we get data back
+      speedmap(data); // call our speedmap function with the result
     }
   });
 
