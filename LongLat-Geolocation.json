@@ -11,8 +11,8 @@
                             52.6333618
                         ]
                     },
-            "properties": { "bbspeed":1,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":17000,
+                            "label":"Norwich"}
         },
         {   "type":"Feature",
             "id":2,
@@ -23,8 +23,8 @@
                             52.0446001
                         ]
                     },
-            "properties": { "bbspeed":3,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":4730,
+                            "label":"Ipswich"}
         },
         {   "type":"Feature",
             "id":3,
@@ -35,8 +35,8 @@
                             51.5388444
                         ]
                     },
-            "properties": { "bbspeed":5,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":2100,
+                            "label":"London - Guardian"}
         },
         {   "type":"Feature",
             "id":4,
@@ -47,8 +47,8 @@
                             51.5132706
                         ]
                     },
-            "properties": { "bbspeed":5,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":4390,
+                            "label":"London - Fluxx"}
         },
         {   "type":"Feature",
             "id":5,
@@ -59,8 +59,8 @@
                             51.4983844
                         ]
                     },
-            "properties": { "bbspeed":2,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":4730,
+                            "label":"London - Osmosoft"}
         },
         {   "type":"Feature",
             "id":6,
@@ -71,8 +71,8 @@
                             51.2425718
                         ]
                     },
-            "properties": { "bbspeed":2,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":6000,
+                            "label":"Guildford"}
         },{   "type":"Feature",
             "id":7,
             "geometry":{
@@ -82,8 +82,8 @@
                             51.4519698
                         ]
                     },
-            "properties": { "bbspeed":4,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":4000,
+                            "label":"Bristol"}
         },
         {   "type":"Feature",
             "id":8,
@@ -94,8 +94,8 @@
                             50.2262046
                         ]
                     },
-            "properties": { "bbspeed":2,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":20000,
+                            "label":"Poole"}
         },
         {   "type":"Feature",
             "id":9,
@@ -106,8 +106,8 @@
                             51.9973125
                         ]
                     },
-            "properties": { "bbspeed":3,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":14000,
+                            "label":"Milton Keynes"}
         },
         {   "type":"Feature",
             "id":10,
@@ -118,8 +118,8 @@
                             52.4762241
                         ]
                     },
-            "properties": { "bbspeed":4,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":4000,
+                            "label":"Birmingham"}
         },
         {   "type":"Feature",
             "id":11,
@@ -130,8 +130,8 @@
                             54.9675589
                         ]
                     },
-            "properties": { "bbspeed":1,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":10000,
+                            "label":"Newcastle"}
         },
         {   "type":"Feature",
             "id":12,
@@ -142,8 +142,8 @@
                             53.4841175
                         ]
                     },
-            "properties": { "bbspeed":2,
-                            "label":"Centre Name"}
+            "properties": { "bbspeed":20000,
+                            "label":"Manchester"}
         }
     ]
 }

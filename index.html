@@ -34,29 +34,56 @@ var speedmap = function(FeatureCollection){
     /**
      * OpenLayers uses symbolizers to draw features on the map
      */
-    var symbolizer = OpenLayers.Util.applyDefaults( // apply all of the normal defaults
-            {}, // Put base styles in here to override the defaults
-            OpenLayers.Feature.Vector.style["default"]
-        );
-    var styleMap = new OpenLayers.StyleMap({"default": symbolizer}); // make a new stylemap using our symbolizer
+    //var style = OpenLayers.Util.applyDefaults( // apply all of the normal defaults
+    //        {}, // Put base styles in here to override the defaults
+    //        OpenLayers.Feature.Vector.style["default"]
+    //    );
+    var style = new OpenLayers.Style();
     
-    /**
-     * This lookup table keys our broadband speed ratings to specific styles
-     */
-    var speed_lookup = {
-        0:{fillColor:'black'},
-        1:{fillColor:'red'},
-        2:{fillColor:'orange'},
-        3:{fillColor:'yellow'},
-        4:{fillColor:'green'},
-        5:{fillColor:'blue'}
-    };
+    
     /**
      * Now we can tell the stylemap to apply our style rules based on the 
      * bbspeed attribute of each feature
      */
-    styleMap.addUniqueValueRules("default", "bbspeed", speed_lookup);
-
+    
+    var ruleLow = new OpenLayers.Rule(
+    {
+        filter: new OpenLayers.Filter.Comparison(
+            {
+                type: OpenLayers.Filter.Comparison.LESS_THAN_OR_EQUAL_TO,
+                property: "bbspeed",
+                value: 4000,
+            }),
+        symbolizer: {fillColor: "red"}
+    });
+    
+    var ruleMed = new OpenLayers.Rule(
+    {
+        filter: new OpenLayers.Filter.Comparison(
+           {
+                type: OpenLayers.Filter.Comparison.BETWEEN,
+                property: "bbspeed",
+                lowerBoundary: 4000,
+                upperBoundary: 15000,
+            } 
+        ),
+        symbolizer: {fillColor: 'orange'}
+    });
+    
+    var ruleHigh = new OpenLayers.Rule(
+    {
+        filter: new OpenLayers.Filter.Comparison(
+           {
+                type: OpenLayers.Filter.Comparison.GREATER_THAN_OR_EQUAL_TO,
+                property: "bbspeed",
+                value: 15000,
+            } 
+        ),
+        symbolizer: {fillColor: 'green'}
+    });
+    style.addRules([ruleLow, ruleMed, ruleHigh]);
+    
+    var styleMap = new OpenLayers.StyleMap({"default": style}); // make a new stylemap using our symbolizer
     /**
      * Create a reader for geoJSON files which applies an appropriate point transformation
      */ 
@@ -76,7 +103,7 @@ var speedmap = function(FeatureCollection){
         type: 'GET',
         dataType: 'json',
         success: function(data){
-            var speed_layer = new OpenLayers.Layer.Vector('Real Broadband Speeds');
+            var speed_layer = new OpenLayers.Layer.Vector('Real Broadband Speeds', {styleMap:styleMap});
             map.addLayer(speed_layer);
             speed_layer.addFeatures(geojson_format.read(data));
         }
