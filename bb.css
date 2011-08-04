@@ -1,0 +1,37 @@
+header {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+nav {
+    position: relative;
+    top: -45px;
+    left: -50px;
+}
+
+#content {
+    width: 100%;
+}
+
+#wrapper {
+    
+    margin: 0px auto;
+    width:900px;
+    height:700px;
+    
+}
+
+div#switcher {
+    float:right;
+}
+
+div#map {
+    width:600px;
+    height:700px;
+}
+
+div.download {
+    width:100%;
+    text-align: right;
+
+}

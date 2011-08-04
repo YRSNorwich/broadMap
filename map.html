@@ -1,0 +1,277 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./bb.css"/>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png"/>
+        <nav>
+            <a href="./index.html"><img src="./images/map(h).png"/></a>
+            <a href="./bbproxy"><img src="./images/speed.png"/></a>
+            <a href="./blocks.html"><img src="./images/blocks.png"/></a>
+        </nav>
+    </header>
+    <div id="content">
+        
+        <div id="wrapper">
+            <div id="switcher"></div>
+            <div id='map'></div>
+        </div>
+    </div>
+    <script type='text/javascript' src='./OpenLayers-2.10/OpenLayers.js'></script>
+    <script type='text/javascript' src='./cloudmade.js'></script>
+    <script src='http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAbEYWM8MxKNVOR6QezvpUDhT4i7qI8p_nbXn49ISZEcup1E09kRSyEy7uADzBepcTTQlb3ohBOJOafg'></script>
+    <script type='text/javascript' src='./jquery-1.6.2.min.js'></script>
+
+<script type='text/javascript'>
+/**
+ * Speedmap - map broadband speeds of YRS centres
+ *
+ * We'll limit our global footprint to a single function
+ */
+var speedmap = function(){
+    var map, layer = null; //initialize variables for our map and the map tile layer
+    map = new OpenLayers.Map('map'); // Build a map using OpenLayers
+    
+    
+    //Add a cloudmade map
+    var cm_layer1 = new OpenLayers.Layer.CloudMade('Midnight', 
+                                                   {
+                                                    isBaseLayer:true,
+                                                    key:'1ec8404748c4482dbacb04eb2818da3e',
+                                                    styleId:999
+                                                   });
+     var cm_layer2 = new OpenLayers.Layer.CloudMade('Dark Grey', 
+                                                   {
+                                                    isBaseLayer:true,
+                                                    key:'1ec8404748c4482dbacb04eb2818da3e',
+                                                    styleId:7571
+                                                   });          
+     var cm_layer3 = new OpenLayers.Layer.CloudMade('Britannia', 
+                                                   {
+                                                    isBaseLayer:true,
+                                                    key:'1ec8404748c4482dbacb04eb2818da3e',
+                                                    styleId:9197
+                                                   });
+     var cm_layer4 = new OpenLayers.Layer.CloudMade('Sea', 
+                                                   {
+                                                    isBaseLayer:true,
+                                                    key:'1ec8404748c4482dbacb04eb2818da3e',
+                                                    styleId:18281
+                                                   });                                                                                       
+     var cm_layer5 = new OpenLayers.Layer.CloudMade('Monotones', 
+                                                   {
+                                                    isBaseLayer:true,
+                                                    key:'1ec8404748c4482dbacb04eb2818da3e',
+                                                    styleId:22621
+                                                   });                                                 
+    map.addLayers([cm_layer5,cm_layer1,cm_layer2,cm_layer3,cm_layer4,]);
+    
+    layer = new OpenLayers.Layer.OSM("Open Street Map", '', 
+                                     {displayInLayerSwitcher:true,
+                                      isBaseLayer:true}); // add a layer showing OpenStreetMap tiles
+    map.addLayer(layer); // add the tile layer to the map
+    
+    /**
+     * Try tomerge in some google maps layers
+     * the url below may help with resolving the projection problems
+     * http://www.gistutor.com/openlayers/12-intermediate-openlayers-tutorials/23-how-to-set-up-an-openlayers-map-with-spherical-mercator-base-layers-and-custom-wfs-gis-data-overlays.html
+     * var gphy = new OpenLayers.Layer.Google(
+     *           "Google Physical",
+     *           {type: G_PHYSICAL_MAP}
+     *       );
+     *       
+     * map.addLayers([gphy])
+     */
+     
+    // We need to set the centre of the map:
+    map.setCenter(
+        new OpenLayers.LonLat(-3.9, 54.2).transform( // Take our notional centre and transform it
+            new OpenLayers.Projection("EPSG:4326"), // from the coordinate format used by google (and most of the rest of us)
+            map.getProjectionObject() // to whichever our map is using (osm uses EPSG:900913)
+        ),
+        6 // Set an intial zoom level
+    );
+    
+    var layer_switch = new OpenLayers.Control.LayerSwitcher({'div':OpenLayers.Util.getElement('switcher')});
+    map.addControl(layer_switch);
+    
+    
+    
+    /**
+     * OpenLayers uses symbolizers to draw features on the map
+     */
+    //var style = OpenLayers.Util.applyDefaults( // apply all of the normal defaults
+    //        {}, // Put base styles in here to override the defaults
+    //        OpenLayers.Feature.Vector.style["default"]
+    //    );
+    var style = new OpenLayers.Style();
+    
+    
+    /**
+     * Now we can tell the stylemap to apply our style rules based on the 
+     * bbspeed attribute of each feature
+     */
+    
+    var ruleLow = new OpenLayers.Rule(
+    {
+        filter: new OpenLayers.Filter.Comparison(
+            {
+                type: OpenLayers.Filter.Comparison.LESS_THAN_OR_EQUAL_TO,
+                property: "bbspeed",
+                value: 4000,
+            }),
+        symbolizer: {fillColor: "red"}
+    });
+    
+    var ruleMed = new OpenLayers.Rule(
+    {
+        filter: new OpenLayers.Filter.Comparison(
+           {
+                type: OpenLayers.Filter.Comparison.BETWEEN,
+                property: "bbspeed",
+                lowerBoundary: 4000,
+                upperBoundary: 15000,
+            } 
+        ),
+        symbolizer: {fillColor: 'orange'}
+    });
+    
+    var ruleHigh = new OpenLayers.Rule(
+    {
+        filter: new OpenLayers.Filter.Comparison(
+           {
+                type: OpenLayers.Filter.Comparison.GREATER_THAN_OR_EQUAL_TO,
+                property: "bbspeed",
+                value: 15000,
+            } 
+        ),
+        symbolizer: {fillColor: 'green'}
+    });
+    style.addRules([ruleLow, ruleMed, ruleHigh]);
+    
+    var styleMap = new OpenLayers.StyleMap({"default": style}); // make a new stylemap using our symbolizer
+    
+    // create and add our vector layers
+    var centres_layer = new OpenLayers.Layer.Vector('Young Rewired State Centres',{styleMap:styleMap});
+    var speed_layer = new OpenLayers.Layer.Vector('Real Broadband Speeds', {styleMap:styleMap});
+    speed_layer.setVisibility(false)
+    map.addLayers([centres_layer, speed_layer]);
+    
+    var twitter_layer = new OpenLayers.Layer.Vector('#ukbroadband tweets');
+    twitter_layer.setVisibility(false);
+    map.addLayer(twitter_layer);
+    
+    //Handle feature selection on speed layers
+    var selectedFeature = null;
+    function onPopupClose(evt) {
+            selectCtrl.unselect(selectedFeature);
+    }
+    function onFeatureSelect(feature) {
+            selectedFeature = feature;
+            
+            var content = '';
+            
+            if (feature.data.hasOwnProperty('tweet')) {
+                content = "<div style='font-size:.8em'>From: " + feature.data.tweeter +"<br>" + feature.data.tweet+"</div>";
+            
+            } else {
+                content = "<div style='font-size:.8em'>Location: " + feature.data.label +"<br>Speed: " + feature.data.bbspeed +"Kbps</div>";
+            }
+            
+            
+            popup = new OpenLayers.Popup.FramedCloud("chicken", 
+                                     feature.geometry.getBounds().getCenterLonLat(),
+                                     null,
+                                     content,
+                                     null, true, onPopupClose);
+            feature.popup = popup;
+            map.addPopup(popup);
+    }
+    function onFeatureUnselect(feature) {
+            map.removePopup(feature.popup);
+            feature.popup.destroy();
+            feature.popup = null;
+    }
+    
+    var highlightCtrl = new OpenLayers.Control.SelectFeature([centres_layer, speed_layer, twitter_layer], {
+                hover: true,
+                highlightOnly: true,
+                renderIntent: "temporary",
+            });
+
+    var selectCtrl = new OpenLayers.Control.SelectFeature([centres_layer, speed_layer, twitter_layer],
+        {clickout: true,
+        onSelect: onFeatureSelect, 
+        onUnselect: onFeatureUnselect}
+    );
+
+    map.addControl(highlightCtrl);
+    map.addControl(selectCtrl);
+
+    highlightCtrl.activate();
+    selectCtrl.activate();
+    
+    
+    
+    /**
+     * Create a reader for geoJSON files which applies an appropriate point transformation
+     */ 
+    var geojson_format = new OpenLayers.Format.GeoJSON({
+                    'internalProjection': map.getProjectionObject(),
+                    'externalProjection': new OpenLayers.Projection("EPSG:4326")
+                });
+
+    
+
+    
+    // Populate the centres layes
+    $.ajax({
+        url: "./LongLat-Geolocation.json", 
+        type: "GET",
+        dataType: "json",
+        success: function(data) { // once we get data back
+            centres_layer.addFeatures(geojson_format.read(data)); // call our speedmap function with the result
+        }
+    });
+    
+    // Populate the speed test layer
+    $.ajax({
+        url: "./city_speeds.json",
+        type: 'GET',
+        dataType: 'json',
+        success: function(data){
+            speed_layer.addFeatures(geojson_format.read(data));
+        }
+    });
+    
+    // Populate the twitter sentiment test layer
+    $.ajax({
+        url: "http://api.scraperwiki.com/api/1.0/datastore/sqlite?format=jsondict&name=ukbroadband_-_tweets&query=select%20*%20from%20swdata",
+        type: 'GET',
+        dataType: 'jsonp',
+        success: function(data){
+            var tw_results = [];
+            $.each(data, function(i, tweet){
+                tweet.type = 'Feature';
+                tweet.geometry = {'type':'Point',
+                                  'coordinates':[tweet.tw_longitude,tweet.tw_latitude]};
+                tweet.properties = {'tweeter':tweet.tweeter,
+                                    'tweet':tweet.text}
+                tw_results.push(tweet);
+            });
+            var geojson = {'type':'FeatureCollection',
+                            'features': tw_results};
+            twitter_layer.addFeatures(geojson_format.read(geojson));
+        }
+    });
+    
+};
+
+speedmap();
+</script>
+
+</body>
+
+</html>
