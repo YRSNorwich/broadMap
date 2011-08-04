@@ -22,7 +22,6 @@ nav {
 }
 
 div#switcher {
-    float:right;
 }
 
 div#map {
@@ -69,3 +68,45 @@ li.orange {
 li.green {
     background-color: green;
 }
+
+div#key {
+clear:both;
+}
+
+.layersDiv {
+background: darkblue;
+    color: #FFFFFF;
+    opacity: 0.75;
+    padding: 10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+.baseLayersDiv {
+margin:0 0 10px;
+}
+
+#switcher span {
+display:none !important;
+}
+
+#switcher .layersDiv span {
+display:inline !important;
+}
+
+#switcher {
+
+}
+
+div.baseLbl, div.dataLbl {
+border-bottom:1px solid;
+font-size:18px;
+padding:0 0 5px;
+margin:0 0 5px;
+}
+
+#legend h2 {
+margin-top:0;
+}
+

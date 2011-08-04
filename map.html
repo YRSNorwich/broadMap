@@ -17,8 +17,10 @@
         <div id="wrapper">
             <div id="controls">
                 <div id="switcher"></div>
+                
                 <div id="legend">
-                    <h2>Key:</h2>
+                
+                    <div id="key"><h2>Key:</h2></div>
                     <ul>
                         <li class="red">0-4000Kbps</li>
                         <li class="orange">4000-15000Kbps</li>
@@ -76,7 +78,7 @@ var speedmap = function(){
                                                     key:'1ec8404748c4482dbacb04eb2818da3e',
                                                     styleId:22621
                                                    });                                                 
-    map.addLayers([cm_layer5,cm_layer1,cm_layer2,cm_layer3,cm_layer4,]);
+    map.addLayers([cm_layer3,cm_layer5,cm_layer1,cm_layer2,cm_layer4,]);
     
     layer = new OpenLayers.Layer.OSM("Open Street Map", '', 
                                      {displayInLayerSwitcher:true,
