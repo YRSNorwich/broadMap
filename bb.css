@@ -35,3 +35,37 @@ div.download {
     text-align: right;
 
 }
+
+div#controls {
+    float:right;
+    clear:right;
+    width: 250px;
+    
+    
+}
+
+div#legend ul {
+    list-style: none;
+    width:150px;
+    margin: 0 -40px;
+}
+
+li {
+    margin: 0 -40px 10px 0;
+    border-radius: 5px;
+    color: white;
+    padding: 5 5 5 5;
+    text-align: center;
+}
+
+li.red {
+    background-color: red;
+}
+
+li.orange {
+    background-color: orange;
+}
+
+li.green {
+    background-color: green;
+}

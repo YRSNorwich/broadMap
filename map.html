@@ -7,7 +7,7 @@
     <header>
         <img src="./images/logo.png"/>
         <nav>
-            <a href="./index.html"><img src="./images/map(h).png"/></a>
+            <a href="./map.html"><img src="./images/map(h).png"/></a>
             <a href="./bbproxy"><img src="./images/speed.png"/></a>
             <a href="./blocks.html"><img src="./images/blocks.png"/></a>
         </nav>
@@ -15,7 +15,17 @@
     <div id="content">
         
         <div id="wrapper">
-            <div id="switcher"></div>
+            <div id="controls">
+                <div id="switcher"></div>
+                <div id="legend">
+                    <h2>Key:</h2>
+                    <ul>
+                        <li class="red">0-4000Kbps</li>
+                        <li class="orange">4000-15000Kbps</li>
+                        <li class="green">15000Kbps +</li>
+                    </ul>
+                </div>
+            </div>
             <div id='map'></div>
         </div>
     </div>
@@ -122,7 +132,7 @@ var speedmap = function(){
                 property: "bbspeed",
                 value: 4000,
             }),
-        symbolizer: {fillColor: "red"}
+        symbolizer: {fillColor: "red", pointRadius:7, fillOpacity:0.8}
     });
     
     var ruleMed = new OpenLayers.Rule(
@@ -135,7 +145,7 @@ var speedmap = function(){
                 upperBoundary: 15000,
             } 
         ),
-        symbolizer: {fillColor: 'orange'}
+        symbolizer: {fillColor: 'orange', pointRadius:7, fillOpacity:0.7}
     });
     
     var ruleHigh = new OpenLayers.Rule(
@@ -147,7 +157,7 @@ var speedmap = function(){
                 value: 15000,
             } 
         ),
-        symbolizer: {fillColor: 'green'}
+        symbolizer: {fillColor: 'green', pointRadius:7, fillOpacity:0.8}
     });
     style.addRules([ruleLow, ruleMed, ruleHigh]);
     
@@ -157,7 +167,9 @@ var speedmap = function(){
     var centres_layer = new OpenLayers.Layer.Vector('Young Rewired State Centres',{styleMap:styleMap});
     var speed_layer = new OpenLayers.Layer.Vector('Real Broadband Speeds', {styleMap:styleMap});
     speed_layer.setVisibility(false)
-    map.addLayers([centres_layer, speed_layer]);
+    var ofcom_layer = new OpenLayers.Layer.Vector('Ofcom Average Speeds', {styleMap:styleMap});
+    ofcom_layer.setVisibility(false)
+    map.addLayers([centres_layer, speed_layer, ofcom_layer]);
     
     var twitter_layer = new OpenLayers.Layer.Vector('#ukbroadband tweets');
     twitter_layer.setVisibility(false);
@@ -195,13 +207,13 @@ var speedmap = function(){
             feature.popup = null;
     }
     
-    var highlightCtrl = new OpenLayers.Control.SelectFeature([centres_layer, speed_layer, twitter_layer], {
+    var highlightCtrl = new OpenLayers.Control.SelectFeature([centres_layer, speed_layer, ofcom_layer, twitter_layer], {
                 hover: true,
                 highlightOnly: true,
                 renderIntent: "temporary",
             });
 
-    var selectCtrl = new OpenLayers.Control.SelectFeature([centres_layer, speed_layer, twitter_layer],
+    var selectCtrl = new OpenLayers.Control.SelectFeature([centres_layer, speed_layer, ofcom_layer, twitter_layer],
         {clickout: true,
         onSelect: onFeatureSelect, 
         onUnselect: onFeatureUnselect}
@@ -243,6 +255,16 @@ var speedmap = function(){
         dataType: 'json',
         success: function(data){
             speed_layer.addFeatures(geojson_format.read(data));
+        }
+    });
+    
+    // Populate the speed test layer
+    $.ajax({
+        url: "./ofcom.json",
+        type: 'GET',
+        dataType: 'json',
+        success: function(data){
+            ofcom_layer.addFeatures(geojson_format.read(data));
         }
     });
     

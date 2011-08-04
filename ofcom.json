@@ -1,0 +1,2805 @@
+{
+
+    "type": "FeatureCollection",
+    "features": [{
+      "type":"Feature",
+      "id":"Aberdeen City",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.0913745,57.1452452
+                        ]
+                    },
+       "properties": { "bbspeed":7400,
+                       "label":"Aberdeen City" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Aberdeenshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.666667,57.166667
+                        ]
+                    },
+       "properties": { "bbspeed":6100,
+                       "label":"Aberdeenshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Abertawe - Swansea",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.9467751,51.6211442
+                        ]
+                    },
+       "properties": { "bbspeed":8200,
+                       "label":"Abertawe - Swansea" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Angus",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.916667,56.666667
+                        ]
+                    },
+       "properties": { "bbspeed":7100,
+                       "label":"Angus" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Antrim",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.2192038,54.715139
+                        ]
+                    },
+       "properties": { "bbspeed":5800,
+                       "label":"Antrim" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Ards",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -5.7039534,54.5974842
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"Ards" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Argyll and Bute",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -5.3972941,56.4652018
+                        ]
+                    },
+       "properties": { "bbspeed":6000,
+                       "label":"Argyll and Bute" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Armagh",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.6540432,54.3481977
+                        ]
+                    },
+       "properties": { "bbspeed":5300,
+                       "label":"Armagh" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Ballymena",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.275797,54.8654427
+                        ]
+                    },
+       "properties": { "bbspeed":5200,
+                       "label":"Ballymena" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Ballymoney",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.5135048,55.0676791
+                        ]
+                    },
+       "properties": { "bbspeed":5800,
+                       "label":"Ballymoney" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Banbridge",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.2714623,54.3514168
+                        ]
+                    },
+       "properties": { "bbspeed":6100,
+                       "label":"Banbridge" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Barnsley District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.4972253,53.5588838
+                        ]
+                    },
+       "properties": { "bbspeed":6900,
+                       "label":"Barnsley District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Bath and North East Somerset",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.47173482967529,51.3535329066764
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"Bath and North East Somerset" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Bedford ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.4675041,52.1363806
+                        ]
+                    },
+       "properties": { "bbspeed":7100,
+                       "label":"Bedford " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Belfast",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -5.930087,54.596868
+                        ]
+                    },
+       "properties": { "bbspeed":8900,
+                       "label":"Belfast" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Birmingham District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.60339243113279,52.2880627277967
+                        ]
+                    },
+       "properties": { "bbspeed":8900,
+                       "label":"Birmingham District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Blackburn with Darwen ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.46762821627775,53.6921402754256
+                        ]
+                    },
+       "properties": { "bbspeed":7300,
+                       "label":"Blackburn with Darwen " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Blackpool ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.0429265,53.8031679
+                        ]
+                    },
+       "properties": { "bbspeed":9500,
+                       "label":"Blackpool " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Blaenau Gwent - Blaenau Gwent",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.14129628504882,51.7368024761758
+                        ]
+                    },
+       "properties": { "bbspeed":7500,
+                       "label":"Blaenau Gwent - Blaenau Gwent" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Bolton District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.3378803,52.0630858
+                        ]
+                    },
+       "properties": { "bbspeed":8200,
+                       "label":"Bolton District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Bournemouth ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.85780168265141,50.7418533079464
+                        ]
+                    },
+       "properties": { "bbspeed":9000,
+                       "label":"Bournemouth " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Bracknell Forest ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.739760996247121,51.4080429505319
+                        ]
+                    },
+       "properties": { "bbspeed":6100,
+                       "label":"Bracknell Forest " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Bradford District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.556508760160963,51.886290765824
+                        ]
+                    },
+       "properties": { "bbspeed":8300,
+                       "label":"Bradford District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Bro Morgannwg - the Vale of Glamorgan",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.25119515787313,51.6855541623049
+                        ]
+                    },
+       "properties": { "bbspeed":7500,
+                       "label":"Bro Morgannwg - the Vale of Glamorgan" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Buckinghamshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.75,51.75
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"Buckinghamshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Bury District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            1.076048796733,51.7987309983152
+                        ]
+                    },
+       "properties": { "bbspeed":7100,
+                       "label":"Bury District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Caerdydd - Cardiff",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.20308729350295,51.4728395639499
+                        ]
+                    },
+       "properties": { "bbspeed":7800,
+                       "label":"Caerdydd - Cardiff" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Caerffili - Caerphilly",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.22014079045418,51.5762766119577
+                        ]
+                    },
+       "properties": { "bbspeed":6000,
+                       "label":"Caerffili - Caerphilly" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Calderdale District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.29944979929862,52.8902478688782
+                        ]
+                    },
+       "properties": { "bbspeed":6800,
+                       "label":"Calderdale District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Cambridgeshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.083333,52.333333
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"Cambridgeshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Carrickfergus",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -5.8073112,54.7136165
+                        ]
+                    },
+       "properties": { "bbspeed":5400,
+                       "label":"Carrickfergus" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Casnewydd - Newport",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.9988284,51.589663
+                        ]
+                    },
+       "properties": { "bbspeed":7500,
+                       "label":"Casnewydd - Newport" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Castell-nedd Port Talbot - Neath Port Talbot",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.8039117,51.6628422
+                        ]
+                    },
+       "properties": { "bbspeed":7600,
+                       "label":"Castell-nedd Port Talbot - Neath Port Talbot" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Castlereagh",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -5.866667,54.566667
+                        ]
+                    },
+       "properties": { "bbspeed":7100,
+                       "label":"Castlereagh" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Central Bedfordshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.43652772352722,52.0061239151143
+                        ]
+                    },
+       "properties": { "bbspeed":7500,
+                       "label":"Central Bedfordshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Cheshire East ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.34935354090883,53.1804313599371
+                        ]
+                    },
+       "properties": { "bbspeed":6700,
+                       "label":"Cheshire East " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Cheshire West and Chester ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.73580471027759,53.2002138205066
+                        ]
+                    },
+       "properties": { "bbspeed":6700,
+                       "label":"Cheshire West and Chester " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Bristol ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.77058186534081,51.4526544116193
+                        ]
+                    },
+       "properties": { "bbspeed":9900,
+                       "label":"City of Bristol " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Derby ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.1276597,51.5072759
+                        ]
+                    },
+       "properties": { "bbspeed":8400,
+                       "label":"City of Derby " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Edinburgh",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.1932723,55.9483399
+                        ]
+                    },
+       "properties": { "bbspeed":10100,
+                       "label":"City of Edinburgh" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Kingston upon Hull ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"City of Kingston upon Hull " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Leicester ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.1312289,52.6367811
+                        ]
+                    },
+       "properties": { "bbspeed":8800,
+                       "label":"City of Leicester " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Nottingham ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.1487384,52.9533834
+                        ]
+                    },
+       "properties": { "bbspeed":9100,
+                       "label":"City of Nottingham " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Peterborough ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.2416701,52.5738875
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"City of Peterborough " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Plymouth ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.1424595,50.3712779
+                        ]
+                    },
+       "properties": { "bbspeed":8700,
+                       "label":"City of Plymouth " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Portsmouth ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.0744016,50.8065249
+                        ]
+                    },
+       "properties": { "bbspeed":8900,
+                       "label":"City of Portsmouth " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Southampton ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.4041996,50.9035305
+                        ]
+                    },
+       "properties": { "bbspeed":8000,
+                       "label":"City of Southampton " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Stoke-on-Trent ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.17813495888872,53.0229060202579
+                        ]
+                    },
+       "properties": { "bbspeed":7600,
+                       "label":"City of Stoke-on-Trent " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"City of Wolverhampton District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":9100,
+                       "label":"City of Wolverhampton District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Clackmannanshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.75,56.166667
+                        ]
+                    },
+       "properties": { "bbspeed":5600,
+                       "label":"Clackmannanshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Coleraine",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.671861,55.1315912
+                        ]
+                    },
+       "properties": { "bbspeed":5700,
+                       "label":"Coleraine" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Conwy - Conwy",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.8284214,53.2813536
+                        ]
+                    },
+       "properties": { "bbspeed":5700,
+                       "label":"Conwy - Conwy" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Cookstown",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.7444332,54.6435579
+                        ]
+                    },
+       "properties": { "bbspeed":4400,
+                       "label":"Cookstown" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Cornwall",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.82247197370378,50.406446479952
+                        ]
+                    },
+       "properties": { "bbspeed":6500,
+                       "label":"Cornwall" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"County Durham",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.75,54.666667
+                        ]
+                    },
+       "properties": { "bbspeed":6300,
+                       "label":"County Durham" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"County of Herefordshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":5000,
+                       "label":"County of Herefordshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Coventry District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.732113585833442,52.4177042153389
+                        ]
+                    },
+       "properties": { "bbspeed":8300,
+                       "label":"Coventry District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Craigavon",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.3921622,54.4507201
+                        ]
+                    },
+       "properties": { "bbspeed":5600,
+                       "label":"Craigavon" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Cumbria County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.833333,54.583333
+                        ]
+                    },
+       "properties": { "bbspeed":6100,
+                       "label":"Cumbria County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Darlington ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.551796,54.5296254
+                        ]
+                    },
+       "properties": { "bbspeed":7800,
+                       "label":"Darlington " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Derbyshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.6155880891775,53.1422734348613
+                        ]
+                    },
+       "properties": { "bbspeed":6200,
+                       "label":"Derbyshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Derry",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -7.3192079,54.9942962
+                        ]
+                    },
+       "properties": { "bbspeed":6500,
+                       "label":"Derry" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Devon County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.75,50.75
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"Devon County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Doncaster District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.23064400972962,53.5260087872244
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"Doncaster District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Dorset County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.333333,50.75
+                        ]
+                    },
+       "properties": { "bbspeed":6200,
+                       "label":"Dorset County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Down",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.55431522607786,51.5842579040632
+                        ]
+                    },
+       "properties": { "bbspeed":5400,
+                       "label":"Down" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Dudley District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.62140734839243,50.7544717186324
+                        ]
+                    },
+       "properties": { "bbspeed":8500,
+                       "label":"Dudley District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Dumfries and Galloway",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.833333,55.083333
+                        ]
+                    },
+       "properties": { "bbspeed":6100,
+                       "label":"Dumfries and Galloway" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Dundee City",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.9735213,56.4593653
+                        ]
+                    },
+       "properties": { "bbspeed":9300,
+                       "label":"Dundee City" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Dungannon",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.7703622,54.5039088
+                        ]
+                    },
+       "properties": { "bbspeed":4700,
+                       "label":"Dungannon" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"East Ayrshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.25,55.5
+                        ]
+                    },
+       "properties": { "bbspeed":5800,
+                       "label":"East Ayrshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"East Dunbartonshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.2,55.933333
+                        ]
+                    },
+       "properties": { "bbspeed":9000,
+                       "label":"East Dunbartonshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"East Lothian",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.75,55.916667
+                        ]
+                    },
+       "properties": { "bbspeed":7100,
+                       "label":"East Lothian" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"East Renfrewshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.333333,55.75
+                        ]
+                    },
+       "properties": { "bbspeed":8600,
+                       "label":"East Renfrewshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"East Riding of Yorkshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.5813105,53.9112323
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"East Riding of Yorkshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"East Sussex County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.333333,50.916667
+                        ]
+                    },
+       "properties": { "bbspeed":6700,
+                       "label":"East Sussex County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Essex County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.3665169,51.7816441
+                        ]
+                    },
+       "properties": { "bbspeed":6800,
+                       "label":"Essex County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Falkirk",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.7868533,55.997286
+                        ]
+                    },
+       "properties": { "bbspeed":8400,
+                       "label":"Falkirk" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Fermanagh",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -7.6414085241677,54.3494721035096
+                        ]
+                    },
+       "properties": { "bbspeed":4300,
+                       "label":"Fermanagh" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Fife",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.0000001,56.3333331
+                        ]
+                    },
+       "properties": { "bbspeed":7000,
+                       "label":"Fife" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Gateshead District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":8800,
+                       "label":"Gateshead District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Glasgow City",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.2499891,55.861147
+                        ]
+                    },
+       "properties": { "bbspeed":8900,
+                       "label":"Glasgow City" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Gloucestershire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.1666674,51.8333313
+                        ]
+                    },
+       "properties": { "bbspeed":6600,
+                       "label":"Gloucestershire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Gwynedd - Gwynedd",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.916667,52.833333
+                        ]
+                    },
+       "properties": { "bbspeed":5400,
+                       "label":"Gwynedd - Gwynedd" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Halton ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.7188060206192,53.3437633643797
+                        ]
+                    },
+       "properties": { "bbspeed":7400,
+                       "label":"Halton " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Hampshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.166667,51.083333
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"Hampshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Hartlepool ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.2003161,54.6957009
+                        ]
+                    },
+       "properties": { "bbspeed":7900,
+                       "label":"Hartlepool " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Hertfordshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":7700,
+                       "label":"Hertfordshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Highland",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -5.0000001,57.5000001
+                        ]
+                    },
+       "properties": { "bbspeed":5700,
+                       "label":"Highland" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Inverclyde",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.75,55.9
+                        ]
+                    },
+       "properties": { "bbspeed":8600,
+                       "label":"Inverclyde" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Isle of Wight",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.333333,50.666667
+                        ]
+                    },
+       "properties": { "bbspeed":7300,
+                       "label":"Isle of Wight" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Isles of Scilly",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.3482498,49.9117868
+                        ]
+                    },
+       "properties": { "bbspeed":4500,
+                       "label":"Isles of Scilly" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Kent County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.7105077,51.2474823
+                        ]
+                    },
+       "properties": { "bbspeed":6800,
+                       "label":"Kent County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Kirklees District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":7000,
+                       "label":"Kirklees District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Knowsley District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":7800,
+                       "label":"Knowsley District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Lancashire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.5,53.833333
+                        ]
+                    },
+       "properties": { "bbspeed":7400,
+                       "label":"Lancashire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Larne",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -5.8183116,54.8508458
+                        ]
+                    },
+       "properties": { "bbspeed":5600,
+                       "label":"Larne" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Leeds District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.553307,53.8002406
+                        ]
+                    },
+       "properties": { "bbspeed":7900,
+                       "label":"Leeds District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Leicestershire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1,52.666667
+                        ]
+                    },
+       "properties": { "bbspeed":7400,
+                       "label":"Leicestershire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Limavady",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.9488558,55.0491551
+                        ]
+                    },
+       "properties": { "bbspeed":6200,
+                       "label":"Limavady" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Lincolnshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.25,53.166667
+                        ]
+                    },
+       "properties": { "bbspeed":6500,
+                       "label":"Lincolnshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Lisburn",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.0449448,54.5109651
+                        ]
+                    },
+       "properties": { "bbspeed":5400,
+                       "label":"Lisburn" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Liverpool District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":9500,
+                       "label":"Liverpool District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"London",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.1276597,51.5072759
+                        ]
+                    },
+       "properties": { "bbspeed":8800,
+                       "label":"London" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Luton ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.425916240503374,51.8944498900787
+                        ]
+                    },
+       "properties": { "bbspeed":8100,
+                       "label":"Luton " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Magherafelt",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.6078073,54.7544757
+                        ]
+                    },
+       "properties": { "bbspeed":5000,
+                       "label":"Magherafelt" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Manchester District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.27626667107054,52.8901585897177
+                        ]
+                    },
+       "properties": { "bbspeed":8200,
+                       "label":"Manchester District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Medway ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.569216984544368,51.425435254885
+                        ]
+                    },
+       "properties": { "bbspeed":8200,
+                       "label":"Medway " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Merthyr Tudful - Merthyr Tydfil",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.3774057,51.7445822
+                        ]
+                    },
+       "properties": { "bbspeed":6000,
+                       "label":"Merthyr Tudful - Merthyr Tydfil" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Middlesbrough ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.22237981948505,54.5425371219408
+                        ]
+                    },
+       "properties": { "bbspeed":9000,
+                       "label":"Middlesbrough " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Midlothian",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.083333,55.833333
+                        ]
+                    },
+       "properties": { "bbspeed":6000,
+                       "label":"Midlothian" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Milton Keynes ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.7589607,52.0429797
+                        ]
+                    },
+       "properties": { "bbspeed":5500,
+                       "label":"Milton Keynes " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Moray",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.25,57.416667
+                        ]
+                    },
+       "properties": { "bbspeed":5700,
+                       "label":"Moray" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Moyle",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -7.366667,54.716667
+                        ]
+                    },
+       "properties": { "bbspeed":5200,
+                       "label":"Moyle" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Na H-Eileanan an Iar",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":5100,
+                       "label":"Na H-Eileanan an Iar" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Newcastle upon Tyne District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":8800,
+                       "label":"Newcastle upon Tyne District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Newry and Mourne",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -6.3487070035027,54.1785388259242
+                        ]
+                    },
+       "properties": { "bbspeed":5300,
+                       "label":"Newry and Mourne" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Newtownabbey",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -5.9249199,54.6778816
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"Newtownabbey" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Norfolk County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            1,52.666667
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"Norfolk County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"North Ayrshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.59143436828375,55.5072752885837
+                        ]
+                    },
+       "properties": { "bbspeed":7300,
+                       "label":"North Ayrshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"North Down",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.0849286682583354,51.3359893801063
+                        ]
+                    },
+       "properties": { "bbspeed":5400,
+                       "label":"North Down" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"North East Lincolnshire ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.132843245151128,53.5440387615892
+                        ]
+                    },
+       "properties": { "bbspeed":9100,
+                       "label":"North East Lincolnshire " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"North Lanarkshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.1440572548815,55.9118193155293
+                        ]
+                    },
+       "properties": { "bbspeed":7900,
+                       "label":"North Lanarkshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"North Lincolnshire ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.589627779547155,53.5939698382504
+                        ]
+                    },
+       "properties": { "bbspeed":6600,
+                       "label":"North Lincolnshire " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"North Somerset",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.79423374098139,51.3895181271547
+                        ]
+                    },
+       "properties": { "bbspeed":7000,
+                       "label":"North Somerset" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"North Tyneside District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":8100,
+                       "label":"North Tyneside District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"North Yorkshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.5,54.166667
+                        ]
+                    },
+       "properties": { "bbspeed":6600,
+                       "label":"North Yorkshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Northamptonshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.833333,52.25
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"Northamptonshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Northumberland",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.000559,55.25
+                        ]
+                    },
+       "properties": { "bbspeed":6300,
+                       "label":"Northumberland" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Nottinghamshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1,53.166667
+                        ]
+                    },
+       "properties": { "bbspeed":7700,
+                       "label":"Nottinghamshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Oldham District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":7000,
+                       "label":"Oldham District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Omagh",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -7.3029907,54.5992486
+                        ]
+                    },
+       "properties": { "bbspeed":5500,
+                       "label":"Omagh" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Orkney Islands",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.97214725277551,59.038432238025
+                        ]
+                    },
+       "properties": { "bbspeed":5400,
+                       "label":"Orkney Islands" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Oxfordshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.2500001,51.5000001
+                        ]
+                    },
+       "properties": { "bbspeed":7000,
+                       "label":"Oxfordshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Pen-y-bont ar Ogwr - Bridgend",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.5752039,51.5071348
+                        ]
+                    },
+       "properties": { "bbspeed":6300,
+                       "label":"Pen-y-bont ar Ogwr - Bridgend" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Perth and Kinross",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.75,56.5
+                        ]
+                    },
+       "properties": { "bbspeed":6900,
+                       "label":"Perth and Kinross" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Poole ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.9832693,50.7152124
+                        ]
+                    },
+       "properties": { "bbspeed":8000,
+                       "label":"Poole " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Powys - Powys",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.32330941614312,52.5053001691083
+                        ]
+                    },
+       "properties": { "bbspeed":5300,
+                       "label":"Powys - Powys" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Reading ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.984002256347308,51.4530715871673
+                        ]
+                    },
+       "properties": { "bbspeed":8900,
+                       "label":"Reading " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Redcar and Cleveland ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.02207081592865,54.552357854006
+                        ]
+                    },
+       "properties": { "bbspeed":8600,
+                       "label":"Redcar and Cleveland " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Renfrewshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.5,55.833333
+                        ]
+                    },
+       "properties": { "bbspeed":8400,
+                       "label":"Renfrewshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Rhondda Cynon Taf - Rhondda Cynon Taff",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"Rhondda Cynon Taf - Rhondda Cynon Taff" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Rochdale District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            1.71611511470471,52.4509736222396
+                        ]
+                    },
+       "properties": { "bbspeed":6900,
+                       "label":"Rochdale District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Rotherham District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"Rotherham District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Rutland",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.620626,52.6765293
+                        ]
+                    },
+       "properties": { "bbspeed":5800,
+                       "label":"Rutland" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Salford District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":9100,
+                       "label":"Salford District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sandwell District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.29661434080586,52.8919957650118
+                        ]
+                    },
+       "properties": { "bbspeed":8700,
+                       "label":"Sandwell District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Scottish Borders",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.833333,55.583333
+                        ]
+                    },
+       "properties": { "bbspeed":5900,
+                       "label":"Scottish Borders" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sefton District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.3853915,52.25076635
+                        ]
+                    },
+       "properties": { "bbspeed":8800,
+                       "label":"Sefton District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sheffield District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            1.12168659078831,52.5802078935119
+                        ]
+                    },
+       "properties": { "bbspeed":7200,
+                       "label":"Sheffield District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Shetland Islands",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.333333,60.333333
+                        ]
+                    },
+       "properties": { "bbspeed":5500,
+                       "label":"Shetland Islands" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Shropshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.713965387734,52.6429604288722
+                        ]
+                    },
+       "properties": { "bbspeed":5800,
+                       "label":"Shropshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sir Benfro - Pembrokeshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.96093749649829,51.8059032728967
+                        ]
+                    },
+       "properties": { "bbspeed":4800,
+                       "label":"Sir Benfro - Pembrokeshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sir Ceredigion - Ceredigion",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":4800,
+                       "label":"Sir Ceredigion - Ceredigion" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sir Ddinbych - Denbighshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.1746589,53.0385179
+                        ]
+                    },
+       "properties": { "bbspeed":6700,
+                       "label":"Sir Ddinbych - Denbighshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sir Fynwy - Monmouthshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":6100,
+                       "label":"Sir Fynwy - Monmouthshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sir Gaerfyrddin - Carmarthenshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.1896229,51.6869615
+                        ]
+                    },
+       "properties": { "bbspeed":5300,
+                       "label":"Sir Gaerfyrddin - Carmarthenshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sir y Fflint - Flintshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.0333303,53.77711845
+                        ]
+                    },
+       "properties": { "bbspeed":5700,
+                       "label":"Sir y Fflint - Flintshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sir Ynys Mon - Isle of Anglesey",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.0500577977337,53.3178809897966
+                        ]
+                    },
+       "properties": { "bbspeed":5400,
+                       "label":"Sir Ynys Mon - Isle of Anglesey" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Slough ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.5939471,51.5114601
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"Slough " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Solihull District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":8300,
+                       "label":"Solihull District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Somerset County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3,51.083333
+                        ]
+                    },
+       "properties": { "bbspeed":6000,
+                       "label":"Somerset County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"South Ayrshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.4845277,55.5120529
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"South Ayrshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"South Gloucestershire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.45804677955918,51.542168483076
+                        ]
+                    },
+       "properties": { "bbspeed":8000,
+                       "label":"South Gloucestershire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"South Lanarkshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.833333,55.583333
+                        ]
+                    },
+       "properties": { "bbspeed":7700,
+                       "label":"South Lanarkshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"South Tyneside District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":8200,
+                       "label":"South Tyneside District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Southend-on-Sea ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.711497,51.5388733
+                        ]
+                    },
+       "properties": { "bbspeed":9300,
+                       "label":"Southend-on-Sea " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"St. Helens District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            1.48392695439295,52.6793681601711
+                        ]
+                    },
+       "properties": { "bbspeed":8000,
+                       "label":"St. Helens District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Staffordshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.03756330816541,52.858157234641
+                        ]
+                    },
+       "properties": { "bbspeed":6700,
+                       "label":"Staffordshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Stirling",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.9360012,56.1181242
+                        ]
+                    },
+       "properties": { "bbspeed":6400,
+                       "label":"Stirling" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Stockport District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":8800,
+                       "label":"Stockport District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Stockton-on-Tees ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.3279373944696,54.5622729859175
+                        ]
+                    },
+       "properties": { "bbspeed":8300,
+                       "label":"Stockton-on-Tees " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Strabane",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -7.4627993,54.826115
+                        ]
+                    },
+       "properties": { "bbspeed":5800,
+                       "label":"Strabane" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Suffolk County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            1,52.166667
+                        ]
+                    },
+       "properties": { "bbspeed":6300,
+                       "label":"Suffolk County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Sunderland District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.1371830519383,51.9104265344597
+                        ]
+                    },
+       "properties": { "bbspeed":6900,
+                       "label":"Sunderland District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Surrey County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.418618794504247,51.2327486335078
+                        ]
+                    },
+       "properties": { "bbspeed":7400,
+                       "label":"Surrey County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Swindon ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.7858820103548,51.5670093321837
+                        ]
+                    },
+       "properties": { "bbspeed":7600,
+                       "label":"Swindon " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Tameside District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":7700,
+                       "label":"Tameside District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Telford and Wrekin ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.48933197708859,52.7300512846829
+                        ]
+                    },
+       "properties": { "bbspeed":8300,
+                       "label":"Telford and Wrekin " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"The City of Brighton and Hove ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":9300,
+                       "label":"The City of Brighton and Hove " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Thurrock ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.373224574181483,51.5061367331487
+                        ]
+                    },
+       "properties": { "bbspeed":8000,
+                       "label":"Thurrock " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Torbay ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.55418776024164,50.4417001059735
+                        ]
+                    },
+       "properties": { "bbspeed":8600,
+                       "label":"Torbay " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Tor-faen - Torfaen",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":5800,
+                       "label":"Tor-faen - Torfaen" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Trafford District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.9973057,52.22457625
+                        ]
+                    },
+       "properties": { "bbspeed":8500,
+                       "label":"Trafford District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Wakefield District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            0.20105775,52.0648393
+                        ]
+                    },
+       "properties": { "bbspeed":6800,
+                       "label":"Wakefield District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Walsall District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.99043682265615,52.5988396755177
+                        ]
+                    },
+       "properties": { "bbspeed":8200,
+                       "label":"Walsall District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Warrington ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.5943178,53.3899497
+                        ]
+                    },
+       "properties": { "bbspeed":7500,
+                       "label":"Warrington " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Warwickshire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.583333,52.333333
+                        ]
+                    },
+       "properties": { "bbspeed":6800,
+                       "label":"Warwickshire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"West Berkshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.30420916374107,51.4496135417062
+                        ]
+                    },
+       "properties": { "bbspeed":6900,
+                       "label":"West Berkshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"West Dunbartonshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -4.533333,55.966667
+                        ]
+                    },
+       "properties": { "bbspeed":9500,
+                       "label":"West Dunbartonshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"West Lothian",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -3.5,55.916667
+                        ]
+                    },
+       "properties": { "bbspeed":7500,
+                       "label":"West Lothian" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"West Sussex County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.416667,51
+                        ]
+                    },
+       "properties": { "bbspeed":7300,
+                       "label":"West Sussex County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Wigan District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":8600,
+                       "label":"Wigan District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Wiltshire",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.94453093049163,51.2973374228262
+                        ]
+                    },
+       "properties": { "bbspeed":6800,
+                       "label":"Wiltshire" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Windsor and Maidenhead ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.6133183,51.4814958
+                        ]
+                    },
+       "properties": { "bbspeed":5600,
+                       "label":"Windsor and Maidenhead " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Wirral District ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            null,null
+                        ]
+                    },
+       "properties": { "bbspeed":8300,
+                       "label":"Wirral District " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Wokingham ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -0.883889401234521,51.4295094004044
+                        ]
+                    },
+       "properties": { "bbspeed":7000,
+                       "label":"Wokingham " }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Worcestershire County",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.166667,52.166667
+                        ]
+                    },
+       "properties": { "bbspeed":6100,
+                       "label":"Worcestershire County" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"Wrecsam - Wrexham",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -2.9938147,53.0465084
+                        ]
+                    },
+       "properties": { "bbspeed":5900,
+                       "label":"Wrecsam - Wrexham" }
+    }    
+
+,
+{
+      "type":"Feature",
+      "id":"York ",
+      "geometry":{
+                        "type": "Point",
+                        "coordinates": [
+                            -1.0814175,53.9593817
+                        ]
+                    },
+       "properties": { "bbspeed":7100,
+                       "label":"York " }
+    }    
+
+
+  ]
+}
